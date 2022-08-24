@@ -19,7 +19,6 @@ class App {
         this.initializeControllers(controllers);
         this.initializeErrorHandling();
     }
-
     private initializeDatabaseConnection(): void {
         const { MONGO_URI } = process.env;
         mongoose.connect(`${MONGO_URI}`);
